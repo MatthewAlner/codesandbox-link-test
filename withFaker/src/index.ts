@@ -1,4 +1,3 @@
-import './style.css';
 import { mocklify, override } from 'mocklify';
 import { lorem, name, random } from 'faker';
 
