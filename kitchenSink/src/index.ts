@@ -1,4 +1,4 @@
-import { mocklify, override } from "mocklify";
+import { mocklify, override } from 'mocklify';
 
 function prettyPrintUsers(users: IUser[]) {
   const appDiv: HTMLElement | null = document.getElementById("app");

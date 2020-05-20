@@ -1,8 +1,10 @@
-import { mocklify, override } from "mocklify";
+import { mocklify, override } from 'mocklify';
 
 function prettyPrintUsers(users: IUser[]) {
-  const appDiv: HTMLElement = document.getElementById("app");
-  appDiv.innerHTML = `<pre>${JSON.stringify(users, null, 2)}</pre>`;
+  const appDiv: HTMLElement | null = document.getElementById("app");
+  if (appDiv) {
+    appDiv.innerHTML = `<pre>${JSON.stringify(users, null, 2)}</pre>`;
+  }
 }
 
 export interface IUser {
